@@ -3,17 +3,14 @@ package com.pluralsight;
 public class CellPhone {
 
     private int serialNumber;
-    private String model;
-    private String carrier;
-    private String phoneNumber;
-    private String owner;
+    private String model, carrier, phoneNumber, owner;
 
     public CellPhone() {
-         serialNumber = 0;
-         String model = "";
-         String carrier ="";
-         String phoneNumber ="";
-         String owner = "";
+         this.serialNumber = 0;
+         this.model = "";
+         this.carrier ="";
+         this.phoneNumber ="";
+         this.owner = "";
     }
 
     //setter for serial number
@@ -23,7 +20,7 @@ public class CellPhone {
 
     //getter for serial number
     public int getSerialNumber() {
-        return serialNumber;
+        return this.serialNumber;
     }
 
     //setter for model
