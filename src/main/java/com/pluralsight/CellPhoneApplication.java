@@ -7,6 +7,7 @@ public class CellPhoneApplication {
         Scanner scanner = new Scanner(System.in);
         CellPhone cp1 = new CellPhone();
         CellPhone cp2 = new CellPhone();
+        CellPhone cp3 = new CellPhone(1234567, "iPhone 14 Pro Mox", "T-Mobile", "678-999-8212", "Soulja Boy");
 
         System.out.print("What is the serial number? ");
         cp1.setSerialNumber(Integer.parseInt(scanner.nextLine()));
@@ -27,8 +28,10 @@ public class CellPhoneApplication {
 
         display(cp1);
         display(cp2);
+        display(cp3);
         cp1.dial(cp2.getPhoneNumber());
         cp2.dial(cp1.getPhoneNumber());
+        cp3.dial(cp3);
 
     }
 
